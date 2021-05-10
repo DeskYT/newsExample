@@ -1,0 +1,32 @@
+.header{
+  display: flex;
+  width: 100%;
+  padding: 20px 50px;
+  background-color: #f3d360;
+  justify-content: center;
+  color: var(--primary-text-color);
+}
+
+.headerWrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 960px;
+}
+
+.logoContainer{
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.searchInput{
+  padding: 6px 12px;
+  border-radius: 4.5px;
+  border: 2px solid rgb(189, 156, 114);
+  font-size: 0.7rem;
+  box-shadow: 2px 2px 4px 0px rgba(34, 60, 80, 0.2);
+  color: rgb(102, 84, 60);
+}

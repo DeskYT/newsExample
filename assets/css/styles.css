@@ -1,0 +1,11 @@
+@import "./constants.css";
+@import "./header.css";
+@import "./news.css";
+:root {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}

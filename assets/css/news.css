@@ -1,0 +1,154 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
+  min-height: 100vh;
+}
+
+.newsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px 50px 100px;
+  color: var(--primary-text-color);
+}
+
+.newsHeading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.postsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.newPostContainer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.newPostForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 240px;
+  max-width: 720px;
+  width: 80%;
+}
+
+.formLabel {
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.formLabel + .formLabel {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.formField {
+  margin-top: 10px;
+}
+
+.newPostTitle,
+.newPostContent {
+  padding: 6px 12px;
+  border-radius: 4.5px;
+  border: 2px solid var(--light-border-color);
+  font-size: 0.7rem;
+  box-shadow: 1px 1px 3px 0px rgba(34, 60, 80, 0.2);
+  color: rgb(102, 84, 60);
+  width: 100%;
+}
+
+.formButtonsContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.formButton {
+  width: 120px;
+  border: 2px solid var(--light-border-color);
+  border-radius: 5px;
+  background-color: var(--yellow-light-variant);
+  font-size: 0.8rem;
+  padding: 5px 15px;
+}
+
+.formButton:hover {
+  background-color: var(--yellow-dark-variant);
+}
+
+.post {
+  width: 100%;
+  max-width: 960px;
+  margin-top: 25px;
+  padding: 30px 30px 40px;
+  background-color: white;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  transform: all .33s ease-in-out;
+}
+
+.post + .post {
+  margin-top: 50px;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.postCreationDate {
+  color: var(--secondary-text-color);
+  font-size: 0.8rem;
+}
+
+.postContent {
+  margin-top: 20px;
+}
+
+.addNewPostButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: var(--yellow-light-variant);
+  box-shadow: 2px 2px 3px 0px rgba(34, 60, 80, 0.2);
+  bottom: 40px;
+  right: 40px;
+  color: rgb(54, 46, 0);
+
+  transition: color, background-color, opacity 0.2s;
+}
+
+.addNewPostButton:hover {
+  background-color: var(--yellow-dark-variant);
+}
+
+.addNewPostIcon {
+  transition: transform 0.3s;
+}
+
+.addNewPostButton:hover > .addNewPostIcon {
+  transform: rotate(180deg);
+}
